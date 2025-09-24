@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+    <domain-config>
+        <domain includeSubdomains="true">accounts.google.com</domain>
+        <domain includeSubdomains="true">www.googleapis.com</domain>
+        <domain includeSubdomains="true">securetoken.googleapis.com</domain>
+        <domain includeSubdomains="true">identitytoolkit.googleapis.com</domain>
+        <domain includeSubdomains="true">yksquizv2.firebaseapp.com</domain>
+        <domain includeSubdomains="true">yksquizv2.web.app</domain>
+        <domain includeSubdomains="true">www.yksquiz.fun</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,46 @@
+{
+  "short_name": "YKS Quiz",
+  "name": "YKS Quiz - TYT ve AYT Hazırlık",
+  "description": "YKS sınavlarına hazırlık için interaktif quiz platformu",
+  "icons": [
+    {
+      "src": "yksquizfavicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "yksquizfavicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "yksquizfavicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "TYT Türkçe",
+      "short_name": "TYT Türkçe",
+      "description": "TYT Türkçe konularına git",
+      "url": "/tyt-turkce-altkonular",
+      "icons": [{ "src": "yksquizfavicon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "TYT Matematik",
+      "short_name": "TYT Matematik",
+      "description": "TYT Matematik konularına git",
+      "url": "/tyt-matematik-altkonular",
+      "icons": [{ "src": "yksquizfavicon.png", "sizes": "96x96" }]
+    }
+  ]
+} 

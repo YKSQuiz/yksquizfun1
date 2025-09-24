@@ -1,0 +1,1642 @@
+/* ========================================
+   MARKET COMPONENT STYLES - OPTIMIZED
+   ======================================== */
+
+/* Market Container */
+.market-container {
+  min-height: 100vh;
+  height: 100vh;
+  padding: 16px;
+  background: linear-gradient(135deg, #ffb347 0%, #ffcccb 100%);
+  overflow: hidden;
+}
+
+.market-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobil için üst kısım rahatlatma */
+@media (max-width: 768px) {
+  .market-container {
+    padding: 12px 8px;
+  }
+  
+  .market-card {
+    border-radius: 16px;
+  }
+}
+
+/* Header */
+.market-header {
+  background: linear-gradient(135deg, #ffb347 0%, #ffcccb 100%);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.market-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #764ba2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Mobil header rahatlatma */
+@media (max-width: 768px) {
+  .market-header {
+    padding: 16px 20px;
+  }
+  
+  .market-title {
+    font-size: 1.5rem;
+    gap: 6px;
+    justify-content: center;
+  }
+}
+
+/* Market-specific coin display styles */
+.market-coin-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 179, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.market-coin-icon {
+  font-size: 1.4rem;
+  color: #ffb300;
+}
+
+.market-coin-amount {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff6b35;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Mobil coin display rahatlatma */
+@media (max-width: 768px) {
+  .market-coin-display {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  
+  .market-coin-icon {
+    font-size: 1.2rem;
+  }
+  
+  .market-coin-amount {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+/* Tab Navigation */
+.tab-container {
+  display: flex;
+  background: #f8fafc;
+  border-bottom: 1px solid #e0c3fc;
+  will-change: transform;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 16px 20px;
+  background: transparent;
+  color: #764ba2;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  will-change: background-color, color;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.tab-button.active {
+  background: #764ba2;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Mobil tab rahatlatma */
+@media (max-width: 768px) {
+  .tab-button {
+    padding: 14px 16px;
+    font-size: 1rem;
+    gap: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  
+  .market-content {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Purchase Message */
+.purchase-message {
+  padding: 12px 24px;
+  margin: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.purchase-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.purchase-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Mobil purchase message rahatlatma */
+@media (max-width: 768px) {
+  .purchase-message {
+    margin: 12px 16px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Content */
+.market-content {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Mobil content rahatlatma */
+@media (max-width: 768px) {
+  .market-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .market-card {
+    height: 100%;
+    border-radius: 16px;
+  }
+  
+  .market-content {
+    padding: 16px;
+    flex: 1;
+    overflow-y: auto;
+  }
+}
+
+/* Energy Stats Container */
+.energy-stats-container {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f5f6ff 100%);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.energy-stats-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a4ad6;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 20px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-label {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.progress-percentage {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #27eaff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  z-index: 10;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Modern Progress Bar */
+.progress-bar-container {
+  display: flex;
+  gap: 3px;
+  height: 36px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 3px solid #2a2a2a;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+  margin: 8px 0;
+}
+
+.progress-segment {
+  flex: 1;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.progress-segment.purchased {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 50%, #00ff88 100%);
+  border: 1px solid rgba(0,255,136,0.5);
+}
+
+.progress-segment.next {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff6b35 100%);
+  border: 2px solid #ff6b35;
+  position: relative;
+}
+
+.progress-segment.locked {
+  background: linear-gradient(135deg, #444 0%, #666 50%, #444 100%);
+  cursor: default;
+  opacity: 0.7;
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+}
+
+.progress-segment.locked::after {
+  content: '🔒';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Price Tag */
+.price-tag {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  transform: translateY(0);
+  transition: transform 0.2s ease;
+}
+
+.price-tag::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #ee5a52;
+}
+
+/* Market Item Card */
+.market-item-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border: 1px solid rgba(102,126,234,0.1);
+  transition: 0.3s ease;
+}
+
+.market-item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.market-item-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.market-item-icon {
+  font-size: 2rem;
+  color: #667eea;
+}
+
+.market-item-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.market-item-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.market-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-icon {
+  font-size: 1.2rem;
+  color: #ffb300;
+}
+
+.price-amount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff6b35;
+  font-family: 'Orbitron', monospace;
+}
+
+.purchase-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.purchase-button.available {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.purchase-button.available:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.purchase-button.disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.purchase-button.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Grid Layout */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* Responsive Design - 480px için ek rahatlatma */
+@media (max-width: 480px) {
+  .market-container {
+    padding: 8px 4px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .market-card {
+    border-radius: 12px;
+    height: 100%;
+  }
+  
+  .market-header {
+    padding: 12px 16px;
+  }
+  
+  .market-title {
+    font-size: 1.3rem;
+    gap: 4px;
+    justify-content: center;
+  }
+  
+  .market-coin-display {
+    padding: 4px 8px;
+    gap: 4px;
+  }
+  
+  .market-coin-icon {
+    font-size: 1rem;
+  }
+  
+  .market-coin-amount {
+    font-size: 1.1rem;
+  }
+  
+  .tab-button {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    gap: 3px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+  }
+  
+  .purchase-message {
+    margin: 8px 12px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .market-content {
+    padding: 12px;
+    flex: 1;
+    overflow-y: auto;
+  }
+} 
+
+/* Joker Status Container */
+.joker-status-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e0c3fc;
+  box-shadow: 0 4px 16px rgba(118, 75, 162, 0.1);
+  margin-bottom: 20px;
+}
+
+
+
+.joker-status-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #764ba2;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.joker-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.joker-status-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e0c3fc;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 60px;
+}
+
+.joker-status-item:nth-child(1) {
+  border-color: #ff6b6b;
+}
+
+.joker-status-item:nth-child(2) {
+  border-color: #4ecdc4;
+}
+
+.joker-status-item:nth-child(3) {
+  border-color: #45b7d1;
+}
+
+.joker-status-item:nth-child(4) {
+  border-color: #96ceb4;
+}
+
+.joker-status-icon {
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.joker-status-item:nth-child(1) .joker-status-icon {
+  background: #ff6b6b;
+  color: white;
+}
+
+.joker-status-item:nth-child(2) .joker-status-icon {
+  background: #4ecdc4;
+  color: white;
+}
+
+.joker-status-item:nth-child(3) .joker-status-icon {
+  background: #45b7d1;
+  color: white;
+}
+
+.joker-status-item:nth-child(4) .joker-status-icon {
+  background: #96ceb4;
+  color: white;
+}
+
+.joker-status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.joker-status-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1;
+}
+
+.joker-status-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: #764ba2;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Joker status için özel efektler */
+.joker-status-item:nth-child(1) .joker-status-count {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e, #ff6b6b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.joker-status-item:nth-child(2) .joker-status-count {
+  background: linear-gradient(45deg, #4ecdc4, #6ee7df, #4ecdc4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.joker-status-item:nth-child(3) .joker-status-count {
+  background: linear-gradient(45deg, #45b7d1, #67c8e0, #45b7d1);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.joker-status-item:nth-child(4) .joker-status-count {
+  background: linear-gradient(45deg, #96ceb4, #b8e6b8, #96ceb4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive Joker Status */
+@media (max-width: 768px) {
+  .joker-status-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+  
+  .joker-status-item {
+    padding: 10px;
+    min-height: 60px;
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+  
+  .joker-status-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  
+  .joker-status-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .joker-status-name {
+    font-size: 10px;
+    white-space: normal;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+  
+  .joker-status-count {
+    font-size: 12px;
+  }
+  
+  .joker-status-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .joker-status-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+  
+  .joker-status-container {
+    padding: 16px;
+  }
+  
+  .joker-status-title {
+    font-size: 16px;
+  }
+  
+  .joker-status-item {
+    padding: 8px;
+    min-height: 55px;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+  
+  .joker-status-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .joker-status-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .joker-status-name {
+    font-size: 9px;
+    white-space: normal;
+    line-height: 1.1;
+    word-break: break-word;
+    text-align: center;
+  }
+  
+  .joker-status-count {
+    font-size: 11px;
+  }
+} 
+
+/* Modern Energy Market Styles */
+.energy-market-container {
+  padding: 24px;
+  background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  border: 2px solid #e0c3fc;
+  box-shadow: 0 8px 32px rgba(118, 75, 162, 0.1);
+  margin-bottom: 24px;
+}
+
+.energy-market-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.energy-market-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #764ba2;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 8px rgba(118, 75, 162, 0.3);
+}
+
+.energy-market-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Energy Upgrade Card */
+.energy-upgrade-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.1);
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.energy-upgrade-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.energy-upgrade-card:hover::before {
+  transform: scaleX(1);
+}
+
+.energy-upgrade-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+}
+
+.energy-upgrade-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.energy-upgrade-icon {
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.energy-upgrade-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.energy-upgrade-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Segmented Progress Bar */
+.segmented-progress-container {
+  margin-bottom: 20px;
+}
+
+.segmented-progress-bar {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 4px solid #27eaff;
+  border-radius: 24px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+    inset 0 2px 4px rgba(0,0,0,0.3),
+    0 0 20px rgba(39,234,255,0.3),
+    0 0 40px rgba(39,234,255,0.1);
+
+}
+
+.progress-segment {
+  flex: 1;
+  height: 100%;
+  border-right: 2px solid rgba(255,255,255,0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 
+    0 2px 8px rgba(0,0,0,0.8),
+    0 0 10px rgba(255,255,255,0.3);
+  overflow: hidden;
+
+  letter-spacing: 0.5px;
+  font-family: 'Orbitron', monospace;
+}
+
+.progress-segment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.progress-segment:hover::before {
+  left: 100%;
+}
+
+.progress-segment:last-child {
+  border-right: none;
+}
+
+/* Kilit ikonu - üstte */
+.segment-lock-icon {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.9;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  font-weight: bold;
+}
+
+/* Değer - altta */
+.segment-value {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  opacity: 0.95;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.7);
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.3);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  font-family: 'Orbitron', monospace;
+  letter-spacing: 0.5px;
+}
+
+/* Completed segmentler için değer rengi */
+.progress-segment.completed .segment-value {
+  color: #fff;
+  background: rgba(0,255,136,0.4);
+  border: 1px solid rgba(0,255,136,0.6);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  font-weight: 800;
+}
+
+/* Available segmentler için değer rengi */
+.progress-segment.available .segment-value {
+  color: #fff;
+  background: rgba(255,107,53,0.4);
+  border: 1px solid rgba(255,107,53,0.6);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  font-weight: 800;
+}
+
+/* Locked segmentler için değer rengi */
+.progress-segment.locked .segment-value {
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.2);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  font-weight: 700;
+}
+
+.progress-segment.completed {
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 50%, #00ff88 100%);
+  background-size: 200% 200%;
+  box-shadow: 
+    inset 0 2px 4px rgba(0,0,0,0.3),
+    0 0 15px rgba(0,255,136,0.6),
+    0 0 30px rgba(0,255,136,0.3);
+  border: 1px solid rgba(0,255,136,0.5);
+}
+
+.progress-segment.available {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff6b35 100%);
+  background-size: 200% 200%;
+  box-shadow: 
+    inset 0 2px 4px rgba(0,0,0,0.3),
+    0 0 15px rgba(255,107,53,0.6),
+    0 0 30px rgba(255,107,53,0.3);
+  border: 1px solid rgba(255,107,53,0.5);
+  position: relative;
+}
+
+.progress-segment.available::after {
+  display: none;
+}
+
+.progress-segment.locked {
+  background: linear-gradient(135deg, #444 0%, #666 50%, #444 100%);
+  background-size: 200% 200%;
+  opacity: 0.7;
+  cursor: not-allowed;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+
+
+.progress-segment:hover.available {
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+.progress-segment:hover.completed {
+  transform: scale(1.01);
+  z-index: 10;
+}
+
+
+
+.progress-percentage {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #27eaff;
+  font-weight: 900;
+  font-size: 20px;
+  text-shadow: 
+    0 0 10px #27eaff,
+    0 0 20px #27eaff,
+    0 0 30px #27eaff;
+  z-index: 10;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Energy Upgrade Stats */
+.energy-upgrade-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  gap: 12px;
+}
+
+.energy-upgrade-stats-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.current-value,
+.max-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.value-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.value-number {
+  font-size: 18px;
+  font-weight: 900;
+  color: #667eea;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Energy Upgrade Purchase Button */
+.energy-upgrade-purchase-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.energy-upgrade-purchase-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.energy-upgrade-purchase-btn:active {
+  transform: translateY(0);
+}
+
+.energy-upgrade-purchase-btn.disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.energy-upgrade-purchase-btn.disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.energy-upgrade-purchase-btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.energy-upgrade-purchase-btn .btn-icon {
+  font-size: 10px;
+}
+
+.energy-upgrade-purchase-btn .btn-text {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Animations */
+
+/* Updated Confirm Dialog Styles */
+.confirm-dialog-details {
+  margin-bottom: 16px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #667eea;
+  font-family: 'Orbitron', monospace;
+}
+
+/* Energy Refill Card */
+.energy-refill-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.1);
+  border: 2px solid rgba(255, 107, 53, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.energy-refill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b35, #ff8c42);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.energy-refill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.energy-refill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.2);
+}
+
+.energy-refill-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.energy-refill-icon {
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.energy-refill-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.energy-refill-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.energy-refill-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.energy-refill-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.energy-refill-price .price-icon {
+  font-size: 24px;
+}
+
+.energy-refill-price .price-amount {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff6b35;
+  font-family: 'Orbitron', monospace;
+}
+
+.energy-refill-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.energy-refill-button.available {
+  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.energy-refill-button.available:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+}
+
+.energy-refill-button.disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.energy-refill-button.loading {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Onay Dialog Styles */
+.confirm-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+
+.confirm-dialog {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.confirm-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.confirm-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.confirm-dialog-icon {
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.confirm-dialog-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.confirm-dialog-content {
+  margin-bottom: 24px;
+}
+
+.confirm-dialog-content p {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.confirm-dialog-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.confirm-dialog-price .price-icon {
+  font-size: 20px;
+}
+
+.confirm-dialog-price .price-amount {
+  font-size: 24px;
+  font-weight: 900;
+  color: #667eea;
+  font-family: 'Orbitron', monospace;
+}
+
+.confirm-dialog-price .price-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.confirm-dialog-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.confirm-dialog-balance span:first-child {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.balance-status {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.balance-status.sufficient {
+  background: #d4edda;
+  color: #155724;
+}
+
+.balance-status.insufficient {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.confirm-dialog-cancel,
+.confirm-dialog-confirm {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-dialog-cancel {
+  background: #f3f4f6;
+  color: #666;
+  border: 2px solid #e5e7eb;
+}
+
+.confirm-dialog-cancel:hover {
+  background: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+.confirm-dialog-confirm.available {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.confirm-dialog-confirm.available:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.confirm-dialog-confirm.disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .energy-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .energy-stat-card,
+  .energy-refill-card {
+    padding: 20px;
+  }
+  
+  .energy-upgrade-options {
+    gap: 6px;
+  }
+  
+  .upgrade-option {
+    min-width: 70px;
+    padding: 10px 6px;
+  }
+  
+  .confirm-dialog {
+    padding: 24px;
+    margin: 20px;
+  }
+
+  .segmented-progress-bar {
+    height: 32px;
+  }
+  
+  .progress-segment {
+    font-size: 14px;
+  }
+  
+  .segment-lock-icon {
+    font-size: 10px;
+    top: 6%;
+  }
+  
+  .segment-value {
+    font-size: 12px;
+    bottom: 6%;
+  }
+  
+  .progress-percentage {
+    font-size: 16px;
+  }
+  
+  .progress-label {
+    font-size: 16px;
+  }
+  
+  .energy-upgrade-card,
+  .energy-refill-card {
+    padding: 20px;
+  }
+  
+  .energy-upgrade-icon,
+  .energy-refill-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .energy-upgrade-info h3,
+  .energy-refill-info h3 {
+    font-size: 18px;
+  }
+  
+  .value-number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .energy-market-title {
+    font-size: 24px;
+  }
+  
+  .energy-stat-icon,
+  .energy-refill-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .energy-stat-info h3,
+  .energy-refill-info h3 {
+    font-size: 18px;
+  }
+  
+  .upgrade-option {
+    min-width: 60px;
+    padding: 8px 4px;
+  }
+  
+  .upgrade-value {
+    font-size: 14px;
+  }
+  
+  .upgrade-price {
+    font-size: 10px;
+  }
+
+  .segmented-progress-bar {
+    height: 28px;
+  }
+  
+  .progress-segment {
+    font-size: 12px;
+  }
+  
+  .segment-lock-icon {
+    font-size: 8px;
+    top: 5%;
+  }
+  
+  .segment-value {
+    font-size: 10px;
+    bottom: 5%;
+  }
+  
+  .progress-percentage {
+    font-size: 14px;
+  }
+  
+  .progress-label {
+    font-size: 14px;
+  }
+  
+  .energy-upgrade-card,
+  .energy-refill-card {
+    padding: 16px;
+  }
+  
+  .energy-upgrade-icon,
+  .energy-refill-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .energy-upgrade-info h3,
+  .energy-refill-info h3 {
+    font-size: 16px;
+  }
+  
+  .value-number {
+    font-size: 14px;
+  }
+  
+  .energy-upgrade-stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .energy-upgrade-stats-left {
+    width: 100%;
+  }
+  
+  .energy-upgrade-purchase-btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 13px;
+    min-width: auto;
+  }
+  
+  .energy-upgrade-purchase-btn .btn-text {
+    font-size: 12px;
+  }
+} 
+
+/* End of Market Component Styles */ 

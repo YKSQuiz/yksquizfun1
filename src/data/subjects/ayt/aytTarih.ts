@@ -1,0 +1,28 @@
+import { AltKonu } from '../types';
+
+export const aytTarihAltKonular: AltKonu[] = [
+  { id: 'tarih-ve-zaman-ayt', label: 'Tarih ve Zaman', icon: '⏰', color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', route: '/ayt-tarih/tarih-ve-zaman' },
+  { id: 'insanligin-ilk-donemleri-ayt', label: 'İnsanlığın İlk Dönemleri', icon: '🦍', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-tarih/insanligin-ilk-donemleri' },
+  { id: 'ilk-orta-caglarda-turk-dunyasi-ayt', label: 'İlk ve Orta Çağlarda Türk Dünyası', icon: '🏹', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-tarih/ilk-orta-caglarda-turk-dunyasi' },
+  { id: 'orta-cagda-dunya-avrupa-ayt', label: 'Orta Çağda Dünya ve Avrupa', icon: '🏰', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-tarih/orta-cagda-dunya-avrupa' },
+  { id: 'islam-medeniyetinin-dogusu-ayt', label: 'İslam Medeniyetinin Doğuşu', icon: '🕌', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-tarih/islam-medeniyetinin-dogusu' },
+  { id: 'turklerin-islamiyeti-kabulu-ayt', label: 'Türklerin İslamiyeti Kabulü ve İlk Türk-İslam Devletleri', icon: '⚔️', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-tarih/turklerin-islamiyeti-kabulu' },
+  { id: 'yerlesme-devletlesme-selcuklu-ayt', label: 'Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi', icon: '🏛️', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-tarih/yerlesme-devletlesme-selcuklu' },
+  { id: 'beylikten-devlete-osmanli-ayt', label: 'Beylikten Devlete Osmanlı Devleti (Kuruluş Dönemi)', icon: '👑', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-tarih/beylikten-devlete-osmanli' },
+  { id: 'dunya-gucu-osmanli-ayt', label: 'Dünya Gücü Osmanlı (Yükselme Dönemi)', icon: '🌍', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-tarih/dunya-gucu-osmanli' },
+  { id: 'osmanli-kultur-medeniyet-ayt', label: 'Osmanlı Devleti Kültür ve Medeniyeti', icon: '🎭', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-tarih/osmanli-kultur-medeniyet' },
+  { id: 'degisim-caginda-avrupa-osmanli-ayt', label: 'Değişim Çağında Avrupa ve Osmanlı', icon: '🔄', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-tarih/degisim-caginda-avrupa-osmanli' },
+  { id: 'osmanli-duraklama-donemi-ayt', label: 'Osmanlı Devleti - Duraklama Dönemi (17. Yüzyıl)', icon: '⏸️', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-tarih/osmanli-duraklama-donemi' },
+  { id: 'osmanli-gerileme-donemi-ayt', label: 'Osmanlı Devleti - Gerileme Dönemi (18. Yüzyıl)', icon: '📉', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-tarih/osmanli-gerileme-donemi' },
+  { id: 'osmanli-dagilma-donemi-ayt', label: 'Osmanlı Devleti - Dağılma Dönemi (19. Yüzyıl)', icon: '💔', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-tarih/osmanli-dagilma-donemi' },
+  { id: 'xx-yuzyil-baslarinda-osmanli-ayt', label: 'XX. Yüzyıl Başlarında Osmanlı Devleti', icon: '📅', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-tarih/xx-yuzyil-baslarinda-osmanli' },
+  { id: 'birinci-dunya-savasi-osmanli-ayt', label: 'I. Dünya Savaşı ve Osmanlı Devleti', icon: '💥', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-tarih/birinci-dunya-savasi-osmanli' },
+  { id: 'mondros-ateskesi-isgaller-ayt', label: 'Mondros Ateşkesi, İşgaller ve Cemiyetler', icon: '📜', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-tarih/mondros-ateskesi-isgaller' },
+  { id: 'kurtulus-savasina-hazirlik-ayt', label: 'Kurtuluş Savaşına Hazırlık Dönemi', icon: '⚔️', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-tarih/kurtulus-savasina-hazirlik' },
+  { id: 'birinci-tbmm-donemi-ayt', label: 'I. TBMM Dönemi ve Siyasi Gelişmeler', icon: '🏛️', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-tarih/birinci-tbmm-donemi' },
+  { id: 'kurtulus-savasi-antlasmalar-ayt', label: 'Kurtuluş Savaşı ve Antlaşmalar', icon: '🤝', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-tarih/kurtulus-savasi-antlasmalar' },
+  { id: 'ikinci-tbmm-donemi-cumhuriyet-ayt', label: 'II. TBMM Dönemi ve Cumhuriyetin İlanı', icon: '🇹🇷', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-tarih/ikinci-tbmm-donemi-cumhuriyet' },
+  { id: 'turk-inkilabi-ayt', label: 'Türk İnkılabı (Siyasi, Hukuki, Eğitim, Ekonomi ve Toplumsal Alanda Değişimler)', icon: '🔄', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-tarih/turk-inkilabi' },
+  { id: 'ataturk-ilkeleri-ataturkculuk-ayt', label: 'Atatürk İlkeleri ve Atatürkçülük', icon: '⭐', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-tarih/ataturk-ilkeleri-ataturkculuk' },
+  { id: 'ataturk-donemi-dis-politika-ayt', label: 'Atatürk Dönemi Türk Dış Politikası ve Çağdaş Türkiye', icon: '🌐', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-tarih/ataturk-donemi-dis-politika' },
+]; 

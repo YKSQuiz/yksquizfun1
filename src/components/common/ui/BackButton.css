@@ -1,0 +1,355 @@
+/* ========================================
+   OPTIMIZED BACK BUTTON - ICON ONLY
+   ======================================== */
+
+.back-button {
+  position: fixed !important;
+  top: 24px !important;
+  left: 24px !important;
+  z-index: 99999 !important;
+  
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  width: 64px !important;
+  height: 64px !important;
+  padding: 0 !important;
+  
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.95) 50%, rgba(15, 52, 96, 1) 100%) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  
+  border: 3px solid rgba(255, 107, 53, 0.8) !important;
+  border-radius: 20px !important;
+  
+  cursor: pointer !important;
+  outline: none !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden !important;
+  
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.button-container {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2 !important;
+}
+
+.icon-container {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+  box-shadow: 
+    0 4px 16px rgba(255, 107, 53, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.icon-background {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px !important;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+  transition: all 0.3s ease !important;
+}
+
+.back-icon {
+  width: 24px !important;
+  height: 24px !important;
+  stroke: #ffffff !important;
+  stroke-width: 2.5 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4)) !important;
+}
+
+.button-glow {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: radial-gradient(circle at center, rgba(255, 107, 53, 0.3) 0%, transparent 70%) !important;
+  border-radius: 20px !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+}
+
+.icon-glow {
+  position: absolute !important;
+  top: -2px !important;
+  left: -2px !important;
+  right: -2px !important;
+  bottom: -2px !important;
+  background: radial-gradient(circle at center, rgba(255, 107, 53, 0.8) 0%, transparent 70%) !important;
+  border-radius: 14px !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+}
+
+.button-border {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  border-radius: 20px !important;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ff6b35) !important;
+  background-size: 200% 200% !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.particles {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+.particle {
+  position: absolute !important;
+  width: 4px !important;
+  height: 4px !important;
+  background: #ff6b35 !important;
+  border-radius: 50% !important;
+  opacity: 0 !important;
+  animation: particleFloat 3s infinite linear !important;
+}
+
+.particle:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 60%; left: 80%; animation-delay: 0.5s; }
+.particle:nth-child(3) { top: 80%; left: 40%; animation-delay: 1s; }
+.particle:nth-child(4) { top: 40%; left: 60%; animation-delay: 1.5s; }
+.particle:nth-child(5) { top: 10%; left: 80%; animation-delay: 2s; }
+.particle:nth-child(6) { top: 70%; left: 20%; animation-delay: 2.5s; }
+
+.ripple {
+  position: absolute !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.8) 0%, transparent 70%) !important;
+  transform: scale(0) !important;
+  animation: rippleEffect 0.6s ease-out !important;
+  pointer-events: none !important;
+}
+
+/* Hover States */
+.back-button:hover {
+  transform: translateY(-4px) scale(1.05) !important;
+  box-shadow: 
+    0 16px 48px rgba(0, 0, 0, 0.5),
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 107, 53, 1) !important;
+}
+
+.back-button:hover .button-glow {
+  opacity: 1 !important;
+}
+
+.back-button:hover .icon-container {
+  transform: scale(1.1) rotate(-5deg) !important;
+  box-shadow: 
+    0 8px 24px rgba(255, 107, 53, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+}
+
+.back-button:hover .icon-background {
+  background: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%) !important;
+}
+
+.back-button:hover .back-icon {
+  transform: translateX(-2px) scale(1.1) !important;
+}
+
+.back-button:hover .icon-glow {
+  opacity: 1 !important;
+}
+
+.back-button:hover .button-border {
+  opacity: 0.4 !important;
+}
+
+.back-button:hover .particle {
+  opacity: 0.8 !important;
+}
+
+/* Pressed State */
+.back-button.pressed {
+  transform: translateY(-2px) scale(0.98) !important;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+.back-button.pressed .icon-container {
+  transform: scale(0.95) !important;
+}
+
+/* Focus State */
+.back-button:focus {
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 0 4px rgba(255, 107, 53, 0.6) !important;
+}
+
+/* Animations */
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Leaderboard Back Button Override */
+.back-button.leaderboard-back-btn {
+  position: fixed !important;
+  top: 20px !important;
+  left: 20px !important;
+  z-index: 99999 !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .back-button.leaderboard-back-btn {
+    top: 15px !important;
+    left: 15px !important;
+  }
+  
+  .back-button {
+    top: 18px !important;
+    left: 18px !important;
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 16px !important;
+    border-width: 2px !important;
+  }
+  
+  .icon-container {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+  }
+  
+  .back-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button.leaderboard-back-btn {
+    top: 12px !important;
+    left: 12px !important;
+  }
+  
+  .back-button {
+    top: 16px !important;
+    left: 16px !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 14px !important;
+    border-width: 2px !important;
+  }
+  
+  .icon-container {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px !important;
+  }
+  
+  .back-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .back-button {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 26, 0.95) 50%, rgba(42, 42, 42, 1) 100%) !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .back-button {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border: 3px solid #ffffff !important;
+  }
+  
+  .icon-container {
+    background: #ffffff !important;
+  }
+  
+  .back-icon {
+    stroke: #000000 !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .back-button,
+  .back-button:hover,
+  .back-button:active,
+  .back-icon,
+  .icon-container,
+  .particle {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+} 

@@ -1,0 +1,26 @@
+import { AltKonu } from '../types';
+
+export const tytCografyaAltKonular: AltKonu[] = [
+  { id: 'doga-ve-insan', label: 'Doğa ve İnsan', icon: '🌍', color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', route: '/cografya/doga-ve-insan' },
+  { id: 'dunyanin-sekli-hareketleri', label: 'Dünya\'nın Şekli ve Hareketleri', icon: '🌎', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/cografya/dunyanin-sekli-hareketleri' },
+  { id: 'cografi-konum', label: 'Coğrafi Konum', icon: '📍', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/cografya/cografi-konum' },
+  { id: 'harita-bilgisi', label: 'Harita Bilgisi', icon: '🗺️', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/cografya/harita-bilgisi' },
+  { id: 'atmosfer-iklim', label: 'Atmosfer ve İklim', icon: '🌤️', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/cografya/atmosfer-iklim' },
+  { id: 'sicaklik', label: 'Sıcaklık', icon: '🌡️', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/cografya/sicaklik' },
+  { id: 'basinc-ruzgarlar', label: 'Basınç ve Rüzgarlar', icon: '💨', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/cografya/basinc-ruzgarlar' },
+  { id: 'nem-yagis', label: 'Nem ve Yağış', icon: '🌧️', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/cografya/nem-yagis' },
+  { id: 'iklim-tipleri', label: 'İklim Tipleri', icon: '🌦️', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/cografya/iklim-tipleri' },
+  { id: 'dunyanin-tektonik-olusumu', label: 'Dünya\'nın Tektonik Oluşumu', icon: '🌋', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/cografya/dunyanin-tektonik-olusumu' },
+  { id: 'ic-kuvvetler-kayaclar', label: 'İç Kuvvetler ve Kayaçlar', icon: '⛰️', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/cografya/ic-kuvvetler-kayaclar' },
+  { id: 'dis-kuvvetler', label: 'Dış Kuvvetler', icon: '🏔️', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/cografya/dis-kuvvetler' },
+  { id: 'turkiyenin-yeryuzu-sekilleri', label: 'Türkiye\'nin Yeryüzü Şekilleri', icon: '🗻', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/cografya/turkiyenin-yeryuzu-sekilleri' },
+  { id: 'su-toprak-bitki-varligi', label: 'Dünyada ve Türkiye\'de Su,Toprak ve Bitki varlığı', icon: '🌱', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/cografya/su-toprak-bitki-varligi' },
+  { id: 'yerlesmeler', label: 'Yerleşmeler', icon: '🏘️', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/cografya/yerlesmeler' },
+  { id: 'nufus', label: 'Nüfus', icon: '👥', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/cografya/nufus' },
+  { id: 'turkiyede-nufus', label: 'Türkiye\'de Nüfus', icon: '🇹🇷', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/cografya/turkiyede-nufus' },
+  { id: 'gocler', label: 'Göçler', icon: '🚶‍♂️', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/cografya/gocler' },
+  { id: 'ekonomik-faaliyetler', label: 'Ekonomik Faaliyetler', icon: '💼', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/cografya/ekonomik-faaliyetler' },
+  { id: 'bolge-cesitleri-sinirlar', label: 'Bölge Çeşitleri ve Bölge Sınırlarının Belirlenmesi', icon: '🗺️', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/cografya/bolge-cesitleri-sinirlar' },
+  { id: 'uluslararasi-ulasim-hatlari', label: 'Uluslararası Ulaşım Hatları', icon: '🚢', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/cografya/uluslararasi-ulasim-hatlari' },
+  { id: 'dogal-afetler', label: 'Doğal Afetler', icon: '🌊', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/cografya/dogal-afetler' },
+]; 

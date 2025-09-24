@@ -1,0 +1,117 @@
+{
+  "name": "yks-quiz",
+  "version": "1.0.0",
+  "description": "YKS Quiz Uygulaması - Türkiye'nin en kapsamlı YKS hazırlık platformu",
+  "homepage": "https://www.yksquiz.fun",
+  "private": true,
+  "author": "YKS Quiz Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/app": "^7.0.2",
+    "@capacitor/cli": "^7.4.2",
+    "@capacitor/core": "^7.4.2",
+    "@types/dompurify": "^3.0.5",
+    "canvas-confetti": "^1.9.3",
+    "disposable-email-domains": "^1.0.62",
+    "dompurify": "^3.2.7",
+    "email-validator": "^2.0.4",
+    "firebase": "^11.10.0",
+    "firebase-admin": "^13.4.0",
+    "onesignal-cordova-plugin": "^5.2.15",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.15.4",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build && git rev-parse HEAD > build/version.txt",
+    "build:prod": "set \"GENERATE_SOURCEMAP=false\" && set \"INLINE_RUNTIME_CHUNK=false\" && craco build && git rev-parse HEAD > build/version.txt",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prebuild": "echo 'Skipping type-check for now'",
+    "postbuild": "echo 'Build completed successfully!'",
+    "deploy:staging": "npm run build:prod && echo 'Staging deployment ready'",
+    "deploy:production": "npm run build:prod && echo 'Production deployment ready'",
+    "db:upload-csv": "node scripts/database/csv-to-firebase.js",
+    "db:delete-questions": "node scripts/database/delete-questions.js",
+    "db:fix-daily-activity": "node scripts/database/fix-daily-activity-decimals-admin.js",
+    "db:fix-session-time": "node scripts/database/fix-session-time-location.js",
+    "db:fix-session-times": "node scripts/database/fixSessionTimes.js",
+    "db:validate-csv": "node scripts/database/validate-csv.js",
+    "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deployment/deploy.ps1",
+    "deploy:github": "powershell -ExecutionPolicy Bypass -File scripts/deployment/github-deploy.ps1",
+    "deploy:vps": "powershell -ExecutionPolicy Bypass -File scripts/deployment/vps-deploy.ps1",
+    "deploy:full": "powershell -ExecutionPolicy Bypass -File scripts/deployment/full-deploy.ps1",
+    "deploy:quick": "powershell -ExecutionPolicy Bypass -File scripts/deployment/quick-deploy.ps1",
+    "deploy:rollback": "powershell -ExecutionPolicy Bypass -File scripts/deployment/rollback.ps1",
+    "deploy:cleanup": "powershell -ExecutionPolicy Bypass -File scripts/deployment/cleanup.ps1",
+    "deploy:test": "powershell -ExecutionPolicy Bypass -File scripts/deployment/test-connection.ps1",
+    "health:check": "bash scripts/maintenance/health-check.sh",
+    "dev:setup": "node scripts/dev/setup-dev.js",
+    "test:run": "node scripts/test/run-tests.js",
+    "utils:sitemap": "node scripts/utils/generate-sitemap.js",
+    "utils:analyze-bundle": "node scripts/utils/analyze-bundle.js",
+    "utils:check-deps": "node scripts/utils/check-dependencies.js",
+    "utils:purge-css": "node scripts/utils/purge-css.js",
+    "utils:cleanup-unused": "node scripts/utils/cleanup-unused-files.js",
+    "build:apk": "powershell -ExecutionPolicy Bypass -File scripts/build-apk.ps1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "prefer-const": "error"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/email-validator": "^1.0.30",
+    "@types/node": "^16.18.0",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^2.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2
+  }
+}

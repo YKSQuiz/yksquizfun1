@@ -1,0 +1,376 @@
+/* ===== GRADIENT BACKGROUND COMPONENT ===== */
+
+/* CSS Variables */
+:root {
+  --gradient-default: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-auth: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+  --gradient-quiz: linear-gradient(135deg, #4facfe 0%, #00f2fe 25%, #667eea 50%, #764ba2 75%, #f093fb 100%);
+  --gradient-market: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #ff9a9e 50%, #fecfef 75%, #fecfef 100%);
+  --gradient-stats: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #ffecd2 100%);
+  --gradient-admin: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  --gradient-test: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #f5576c 100%);
+  --gradient-blue-purple: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #667eea 100%);
+  --gradient-green-blue: linear-gradient(135deg, #00ff88 0%, #00d4ff 50%, #0099ff 100%);
+  --gradient-home: linear-gradient(135deg, #00ff88 0%, #00d4ff 30%, #0099ff 60%, #667eea 100%);
+  --gradient-subjects: linear-gradient(135deg, #ff6b6b 0%, #4facfe 25%, #00f2fe 50%, #667eea 75%, #764ba2 100%);
+  --gradient-orange-red: linear-gradient(135deg, #ff6b6b 0%, #ffa500 50%, #ff4500 100%);
+  
+  --particle-size: 4px;
+  --particle-size-tablet: 2px;
+  --particle-size-mobile: 1px;
+  --shape-size-1: 120px;
+  --shape-size-2: 80px;
+  --shape-size-3: 100px;
+  --shape-size-tablet-1: 80px;
+  --shape-size-tablet-2: 60px;
+  --shape-size-tablet-3: 70px;
+  --shape-size-mobile-1: 60px;
+  --shape-size-mobile-2: 40px;
+  --shape-size-mobile-3: 50px;
+}
+
+/* Ana container */
+.gradient-background {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ana gradient arka plan */
+.gradient-bg-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Gradient varyantları */
+.gradient-background-default .gradient-bg-base,
+.gradient-background-purple-blue .gradient-bg-base {
+  background: var(--gradient-default);
+}
+
+.gradient-background-auth .gradient-bg-base {
+  background: var(--gradient-auth);
+}
+
+.gradient-background-quiz .gradient-bg-base {
+  background: var(--gradient-quiz);
+}
+
+.gradient-background-market .gradient-bg-base {
+  background: var(--gradient-market);
+}
+
+.gradient-background-stats .gradient-bg-base {
+  background: var(--gradient-stats);
+}
+
+.gradient-background-admin .gradient-bg-base {
+  background: var(--gradient-admin);
+}
+
+.gradient-background-test .gradient-bg-base {
+  background: var(--gradient-test);
+}
+
+.gradient-background-blue-purple .gradient-bg-base {
+  background: var(--gradient-blue-purple);
+}
+
+.gradient-background-green-blue .gradient-bg-base {
+  background: var(--gradient-green-blue);
+}
+
+.gradient-background-home .gradient-bg-base {
+  background: var(--gradient-home);
+}
+
+.gradient-background-subjects .gradient-bg-base {
+  background: var(--gradient-subjects);
+}
+
+.gradient-background-orange-red .gradient-bg-base {
+  background: var(--gradient-orange-red);
+}
+
+/* Particle efektleri */
+.particle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  width: var(--particle-size);
+  height: var(--particle-size);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+  will-change: transform, opacity;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.particle:nth-child(1) { animation-delay: 0s; }
+.particle:nth-child(2) { animation-delay: 2s; }
+.particle:nth-child(3) { animation-delay: 4s; }
+.particle:nth-child(4) { animation-delay: 6s; }
+.particle:nth-child(5) { animation-delay: 1s; }
+.particle:nth-child(6) { animation-delay: 3s; }
+.particle:nth-child(7) { animation-delay: 5s; }
+.particle:nth-child(8) { animation-delay: 7s; }
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+    opacity: 0.4; 
+  }
+  50% { 
+    transform: translateY(-15px); 
+    opacity: 0.8; 
+  }
+}
+
+/* Geometric şekiller */
+.geometric-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.geometric-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  animation: geometricFloat 20s ease-in-out infinite;
+  will-change: transform, opacity;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.shape-1 {
+  width: var(--shape-size-1);
+  height: var(--shape-size-1);
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.shape-2 {
+  width: var(--shape-size-2);
+  height: var(--shape-size-2);
+  top: 60%;
+  right: 15%;
+  animation-delay: 5s;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.shape-3 {
+  width: var(--shape-size-3);
+  height: var(--shape-size-3);
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 10s;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@keyframes geometricFloat {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    opacity: 0.3; 
+  }
+  25% { 
+    transform: translateY(-20px) rotate(90deg); 
+    opacity: 0.6; 
+  }
+  50% { 
+    transform: translateY(-10px) rotate(180deg); 
+    opacity: 0.4; 
+  }
+  75% { 
+    transform: translateY(-30px) rotate(270deg); 
+    opacity: 0.7; 
+  }
+}
+
+/* İçerik alanı */
+.gradient-content {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shimmer efekti */
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 6s ease-in-out infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+/* Pulse efekti */
+.gradient-background::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: pulse 8s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 0.3; 
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.2); 
+    opacity: 0.6; 
+  }
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .geometric-shape {
+    transform: scale(0.7);
+  }
+  
+  .shape-1 {
+    width: var(--shape-size-tablet-1);
+    height: var(--shape-size-tablet-1);
+  }
+  
+  .shape-2 {
+    width: var(--shape-size-tablet-2);
+    height: var(--shape-size-tablet-2);
+  }
+  
+  .shape-3 {
+    width: var(--shape-size-tablet-3);
+    height: var(--shape-size-tablet-3);
+  }
+  
+  .particle {
+    width: var(--particle-size-tablet);
+    height: var(--particle-size-tablet);
+  }
+  
+  /* Mobile performance optimizations */
+  .particle {
+    animation: none !important;
+    opacity: 0.3 !important;
+  }
+  
+  .geometric-shape {
+    animation: none !important;
+    opacity: 0.2 !important;
+  }
+  
+  .gradient-background::before,
+  .gradient-background::after {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .geometric-shape {
+    transform: scale(0.5);
+  }
+  
+  .shape-1 {
+    width: var(--shape-size-mobile-1);
+    height: var(--shape-size-mobile-1);
+  }
+  
+  .shape-2 {
+    width: var(--shape-size-mobile-2);
+    height: var(--shape-size-mobile-2);
+  }
+  
+  .shape-3 {
+    width: var(--shape-size-mobile-3);
+    height: var(--shape-size-mobile-3);
+  }
+  
+  .particle {
+    width: var(--particle-size-mobile);
+    height: var(--particle-size-mobile);
+  }
+  
+  /* Enhanced mobile performance optimizations */
+  .particle {
+    display: none !important;
+  }
+  
+  .geometric-shape {
+    display: none !important;
+  }
+  
+  .gradient-background::before,
+  .gradient-background::after {
+    display: none !important;
+  }
+}
+
+/* Accessibility ve tema desteği */
+@media (prefers-color-scheme: dark) {
+  .particle {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  
+  .geometric-shape {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle,
+  .geometric-shape,
+  .gradient-background::before,
+  .gradient-background::after {
+    animation: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .particle {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .geometric-shape {
+    background: rgba(255, 255, 255, 0.2);
+  }
+} 

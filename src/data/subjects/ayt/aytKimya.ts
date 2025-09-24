@@ -1,0 +1,26 @@
+import { AltKonu } from '../types';
+
+export const aytKimyaAltKonular: AltKonu[] = [
+  { id: 'kimya-bilimi-ayt', label: 'Kimya Bilimi', icon: '🧪', color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', route: '/ayt-kimya/kimya-bilimi' },
+  { id: 'atom-periyodik-sistem-ayt', label: 'Atom ve Periyodik Sistem', icon: '⚛️', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-kimya/atom-periyodik-sistem' },
+  { id: 'kimyasal-turler-etkilesim-ayt', label: 'Kimyasal Türler Arası Etkileşimler', icon: '🔗', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-kimya/kimyasal-turler-etkilesim' },
+  { id: 'kimyasal-hesaplamalar-ayt', label: 'Kimyasal Hesaplamalar', icon: '🧮', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-kimya/kimyasal-hesaplamalar' },
+  { id: 'kimyanin-temel-kanunlari-ayt', label: 'Kimyanın Temel Kanunları', icon: '⚖️', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-kimya/kimyanin-temel-kanunlari' },
+  { id: 'asit-baz-tuz-ayt', label: 'Asit, Baz ve Tuz', icon: '🧂', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-kimya/asit-baz-tuz' },
+  { id: 'maddenin-halleri-ayt', label: 'Maddenin Halleri', icon: '💧', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-kimya/maddenin-halleri' },
+  { id: 'karisimlar-ayt', label: 'Karışımlar', icon: '🥤', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-kimya/karisimlar' },
+  { id: 'doga-ve-kimya-ayt', label: 'Doğa ve Kimya', icon: '🌿', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-kimya/doga-ve-kimya' },
+  { id: 'kimya-her-yerde-ayt', label: 'Kimya Her Yerde', icon: '🌍', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-kimya/kimya-her-yerde' },
+  { id: 'modern-atom-teorisi', label: 'Modern Atom Teorisi', icon: '⚛️', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-kimya/modern-atom-teorisi' },
+  { id: 'gazlar', label: 'Gazlar', icon: '💨', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-kimya/gazlar' },
+  { id: 'sivi-cozeltiler-cozunurluk', label: 'Sıvı Çözeltiler ve Çözünürlük', icon: '🧪', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-kimya/sivi-cozeltiler-cozunurluk' },
+  { id: 'kimyasal-tepkimelerde-enerji', label: 'Kimyasal Tepkimelerde Enerji', icon: '⚡', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-kimya/kimyasal-tepkimelerde-enerji' },
+  { id: 'kimyasal-tepkimelerde-hiz', label: 'Kimyasal Tepkimelerde Hız', icon: '⏱️', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-kimya/kimyasal-tepkimelerde-hiz' },
+  { id: 'kimyasal-tepkimelerde-denge', label: 'Kimyasal Tepkimelerde Denge', icon: '⚖️', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-kimya/kimyasal-tepkimelerde-denge' },
+  { id: 'asit-baz-dengesi', label: 'Asit-Baz Dengesi', icon: '🧪', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-kimya/asit-baz-dengesi' },
+  { id: 'cozunurluk-dengesi', label: 'Çözünürlük Dengesi', icon: '💧', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-kimya/cozunurluk-dengesi' },
+  { id: 'kimya-ve-elektrik', label: 'Kimya ve Elektrik', icon: '⚡', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-kimya/kimya-ve-elektrik' },
+  { id: 'karbon-kimyasina-giris', label: 'Karbon Kimyasına Giriş', icon: '🔗', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-kimya/karbon-kimyasina-giris' },
+  { id: 'organik-kimya', label: 'Organik Kimya', icon: '🌱', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-kimya/organik-kimya' },
+  { id: 'enerji-kaynaklari-bilimsel-gelismeler', label: 'Enerji Kaynakları ve Bilimsel Gelişmeler', icon: '🔬', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-kimya/enerji-kaynaklari-bilimsel-gelismeler' },
+]; 

@@ -1,0 +1,25 @@
+import { AltKonu } from '../types';
+
+export const aytFizikAltKonular: AltKonu[] = [
+  { id: 'vektorler', label: 'Vektörler', icon: '➡️', color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', route: '/ayt-fizik/vektorler' },
+  { id: 'kuvvet-tork-denge', label: 'Kuvvet, Tork ve Denge', icon: '⚖️', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-fizik/kuvvet-tork-denge' },
+  { id: 'kutle-merkezi', label: 'Kütle Merkezi', icon: '🎯', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-fizik/kutle-merkezi' },
+  { id: 'basit-makineler', label: 'Basit Makineler', icon: '⚙️', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-fizik/basit-makineler' },
+  { id: 'hareket', label: 'Hareket', icon: '🏃‍♂️', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-fizik/hareket' },
+  { id: 'newtonun-hareket-yasalari', label: 'Newtonun Hareket Yasaları', icon: '📜', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-fizik/newtonun-hareket-yasalari' },
+  { id: 'is-guc-enerji-ayt', label: 'İş, Güç ve Enerji', icon: '💪', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-fizik/is-guc-enerji' },
+  { id: 'atislar', label: 'Atışlar', icon: '🎯', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-fizik/atislar' },
+  { id: 'itme-momentum', label: 'İtme ve Momentum', icon: '💥', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-fizik/itme-momentum' },
+  { id: 'elektrik-alan-potansiyel', label: 'Elektrik Alan ve Potansiyel', icon: '⚡', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-fizik/elektrik-alan-potansiyel' },
+  { id: 'paralel-levhalar-siga', label: 'Paralel Levhalar ve Sığa', icon: '🔋', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-fizik/paralel-levhalar-siga' },
+  { id: 'manyetik-alan-kuvvet', label: 'Manyetik Alan ve Manyetik Kuvvet', icon: '🧲', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-fizik/manyetik-alan-kuvvet' },
+  { id: 'induksiyon-alternatif-akim-transformatörler', label: 'İndüksiyon, Alternatif Akım ve Transformatörler', icon: '🔌', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-fizik/induksiyon-alternatif-akim-transformatörler' },
+  { id: 'duzgun-ceembersel-hareket', label: 'Düzgün Çembersel Hareket', icon: '🔄', color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', route: '/ayt-fizik/duzgun-ceembersel-hareket' },
+  { id: 'donme-yuvarlanma-acisal-momentum', label: 'Dönme, Yuvarlanma ve Açısal Momentum', icon: '🎡', color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)', route: '/ayt-fizik/donme-yuvarlanma-acisal-momentum' },
+  { id: 'kutle-cekim-kepler-yasalari', label: 'Kütle Çekim ve Kepler Yasaları', icon: '🌍', color: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)', route: '/ayt-fizik/kutle-cekim-kepler-yasalari' },
+  { id: 'basit-harmonik-hareket', label: 'Basit Harmonik Hareket', icon: '📏', color: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', route: '/ayt-fizik/basit-harmonik-hareket' },
+  { id: 'dalga-mekanigi', label: 'Dalga Mekaniği', icon: '🌊', color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', route: '/ayt-fizik/dalga-mekanigi' },
+  { id: 'atom-fizigine-giris-radyaktivite', label: 'Atom Fiziğine Giriş ve Radyoaktivite', icon: '⚛️', color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', route: '/ayt-fizik/atom-fizigine-giris-radyaktivite' },
+  { id: 'modern-fizik', label: 'Modern Fizik', icon: '🔬', color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)', route: '/ayt-fizik/modern-fizik' },
+  { id: 'modern-fizigin-teknolojideki-uygulamalari', label: 'Modern Fiziğin Teknolojideki Uygulamaları', icon: '💻', color: 'linear-gradient(135deg, #f953c6 0%, #b91d73 100%)', route: '/ayt-fizik/modern-fizigin-teknolojideki-uygulamalari' },
+]; 
